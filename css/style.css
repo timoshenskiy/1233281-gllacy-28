@@ -20,6 +20,7 @@
   --link-background-special-color: #fbded7;
   --login-link-underline-color: rgba(50, 50, 50, 0.3);
   --link-shadow-color: #696969;
+  --link-active-color: rgba(255, 188, 158, 0.3);
 
   --button-shadow-color: rgba(172, 16, 0, 0.64);
   --button-text-shadow-color: rgba(160, 32, 11, 0.76);
@@ -55,6 +56,12 @@
   --black-opacity-twenty: rgba(0, 0, 0, 0.2);
   --black-opacity-thirty: rgba(0, 0, 0, 0.3);
   --black-opacity-fourty: rgba(0, 0, 0, 0.4);
+
+  --middle-raspberry-background: #62040f;
+  --middle-chocolate-background: #4c2211;
+  --middle-strawberry-background: #f8d2c4;
+  --middle-wafer-background: #fbe5b6;
+  --middle-newsletter-background: #d6cfd2;
 }
 
 *,
@@ -114,12 +121,12 @@ img {
 .link:hover,
 .link:active {
   color: var(--active-link-color);
-  border-color: rgba(255, 188, 158, 0.3);
+  border-color: var(--link-active-color);
 }
 
 .link--black {
   color: var(--basic-black);
-  border-color: rgba(50, 50, 50, 0.3);
+  border-color: var(--login-link-underline-color);
 }
 
 .link--black:hover,
@@ -1578,12 +1585,12 @@ img {
 
 .offers__item--raspberry {
   background-image: url("../img/raspberry-background.jpg");
-  background-color: #62040f;
+  background-color: var(--middle-raspberry-background);
 }
 
 .offers__item--chocolate {
   background-image: url("../img/chocolate-background.jpg");
-  background-color: #4c2211;
+  background-color: var(--middle-chocolate-background);
 }
 
 .offers__title {
@@ -1966,7 +1973,7 @@ img {
   padding-bottom: 25px;
   border-radius: 16px;
   background-image: url("../img/wafer-background.jpg");
-  background-color: #fbe5b6;
+  background-color: var(--middle-wafer-background);
   background-size: cover;
 }
 
@@ -2064,7 +2071,7 @@ img {
   padding-bottom: 30px;
   border-radius: 16px;
   background-image: url("../img/strawberry-background.jpg");
-  background-color: #f8d2c4;
+  background-color: var(--middle-strawberry-background);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2107,7 +2114,7 @@ img {
   padding-right: 6px;
   border-radius: 16px;
   background-image: url("../img/letter-background.jpg");
-  background-color: #d6cfd2;
+  background-color: var(--middle-newsletter-background);
 }
 
 .newsletter__wrapper {
