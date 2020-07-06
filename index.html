@@ -12,9 +12,9 @@
     <header class="header">
       <div class="header__left-side-wrapper">
         <div class="header__logo-navigation-wrapper">
-          <div class="header__logo">
+          <a class="header__logo">
             <img src="img/logo.svg" alt="логотип" width="154" height="64" />
-          </div>
+          </a>
           <nav class="header__navigation">
             <ul class="header__navigation-list">
               <li class="header__navigation-item header__navigation-item--catalog" tabindex="0">
@@ -108,8 +108,8 @@
           </div>
           <ul class="slider__list">
             <li class="slider__item slider__item--1">
-              <img class="slider__left-image" src="img/slider-ice-cream-1.png" alt="Крем-брюле" width="372" height="584" />
-              <img class="slider__right-image" src="img/slider-ice-cream-2.png" alt="Пломбир с малиновым джемом"  width="333" height="519" />
+              <div class="slider__left-image"></div>
+              <div class="slider__right-image"></div>
               <p class="slider__text">
                 Крем-брюле и пломбир<br />
                 с малиновым джемом
@@ -117,8 +117,8 @@
               <a class="slider__link btn" href="#">Давайте оба!</a>
             </li>
             <li class="slider__item slider__item--2">
-              <img class="slider__left-image" src="img/slider-ice-cream-3.png" alt="Шоколадный пломбир" width="375" height="582" />
-              <img class="slider__right-image" src="img/slider-ice-cream-4.png" alt="Лимонный сорбет" width="338" height="523" />
+              <div class="slider__left-image"></div>
+              <div class="slider__right-image"></div>
               <p class="slider__text">
                 Шоколадный пломбир<br />
                 и лимонный сорбет
@@ -126,8 +126,8 @@
               <a class="slider__link btn" href="#">Давайте оба!</a>
             </li>
             <li class="slider__item slider__item--3">
-              <img class="slider__left-image" src="img/slider-ice-cream-5.png" alt="Пломбир с помадкой" width="367" height="582" />
-              <img class="slider__right-image" src="img/slider-ice-cream-6.png" alt="Клубничный щербет" width="326" height="523" />
+              <div class="slider__left-image"></div>
+              <div class="slider__right-image"></div>
               <p class="slider__text">
                 Пломбир с помадкой<br />
                 и клубничный щербет
@@ -151,7 +151,7 @@
             </li>
           </ul>
         </section>
-        <section class="catalog">
+        <section class="catalog catalog--bestseller">
           <h2 class="visually-hidden">Хит продаж</h2>
           <ul class="catalog__list catalog__list--bestseller">
             <li class="catalog__item catalog__item--bestseller">
@@ -220,11 +220,11 @@
           </div>
         </section>
         <div class="blog-newsletter-wrapper">
-          <section class="blog">
+          <article class="blog">
             <h2 class="visually-hidden">Блог о мороженном</h2>
             <p class="blog__text">Новое в нашем блоге</p>
-            <a class="blog__link" href="#"><span class="blog__link-text">10 способов сервировки фруктовых щербетов к столу</span></a>
-          </section>
+            <a class="blog__link" href="#"> <span class="blog__link-text link link--black">10 способов сервировки фруктовых щербетов к столу</span></a>
+          </article>
           <section class="newsletter">
             <div class="newsletter__wrapper">
               <h2 class="visually-hidden">Новостная рассылка</h2>
@@ -252,7 +252,7 @@
               <span class="contacts__phone-number-text">8 812 450-25-25</span>
               (с 10 до 20 ежедневно)
             </p>
-            <button class="contacts__feedback-btn btn" type="button">Форма обратной связи</button>
+            <a href="feedback.html" class="contacts__feedback-btn btn">Форма обратной связи</a>
           </div>
         </div>
       </section>
@@ -323,10 +323,8 @@
         <div class="footer__info-wrapper">
           <ul class="footer__info-list">
             <li class="footer__info-item footer__info-item--for-suppliers"><a class="footer__info-link footer__info-link--for-suppliers link" href="#">Для поставщиков</a></li>
-            <li class="footer__info-item"><a class="footer__info-link footer__info-link--about-production link" href="#">О производстве</a></li>
-          </ul>
-          <ul class="footer__info-list">
             <li class="footer__info-item"><a class="footer__info-link link" href="#">Наши документы</a></li>
+            <li class="footer__info-item"><a class="footer__info-link footer__info-link--about-production link" href="#">О производстве</a></li>
             <li class="footer__info-item"><a class="footer__info-link link" href="#">Экологические стандарты</a></li>
           </ul>
         </div>
