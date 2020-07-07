@@ -76,7 +76,7 @@ body {
   min-width: 1166px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--black);
@@ -166,7 +166,6 @@ img {
   padding-top: 3px;
   padding-left: 14px;
   padding-right: 10px;
-  font-family: "Roboto", Arial, sans-serif;
   color: var(--basic-black);
   font-weight: bold;
   font-size: 16px;
@@ -475,6 +474,7 @@ img {
   content: "»";
   color: var(--basic-white);
   display: inline-block;
+  vertical-align: bottom;
   margin-left: 8px;
   margin-right: 8px;
 }
@@ -663,6 +663,7 @@ img {
 
 .header__login-submit-btn {
   display: inline-block;
+  vertical-align: bottom;
   width: 103px;
   min-height: 44px;
   -webkit-box-shadow: 0px 1px 2px var(--popup-button-shadow-color);
@@ -1205,6 +1206,7 @@ img {
 .filters__fat-value::before {
   content: "";
   display: inline-block;
+  vertical-align: bottom;
   width: 22px;
   min-height: 22px;
   margin-right: 11px;
@@ -1425,6 +1427,7 @@ img {
 
 .slider__button {
   display: inline-block;
+  vertical-align: bottom;
   width: 21px;
   height: 21px;
   margin-right: 5px;
@@ -2188,6 +2191,9 @@ img {
   width: 100%;
   min-height: 430px;
   z-index: 2;
+  background-image: url('../img/map.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0 ;
 }
 
 .contacts__info-wrapper {
